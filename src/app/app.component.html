@@ -1,0 +1,8 @@
+<div class="main-container-app">
+  <div class="alert-inputs-empty" style="{{inputEmptyHtml}}">
+    <span> Alert : </span> Votre input est vide
+  </div>
+  <h1 class="main-title-app"> Spotify Downloader App </h1>
+  <input type="text" class="input-url-playlist" placeholder="Url de votre Musique/Playlist" #valueUserInput>
+  <button type="button" class="download-button" (click)="inputValue(valueUserInput.value)"> Télécharger </button>
+</div>
