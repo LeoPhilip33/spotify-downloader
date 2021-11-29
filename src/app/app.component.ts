@@ -9,9 +9,9 @@ export class AppComponent {
 
   title:string = 'spotify-downloader';
   inputEmptyHtml:string = "display: none;";
+  cliBlock:string = "display : none;"
 
   inputEmpty(){
-    console.log("L'input est vide")
     this.inputEmptyHtml = "";
   }
 
@@ -21,10 +21,8 @@ export class AppComponent {
     }
     if(valueUserInput !== ""){
       this.inputEmptyHtml = "display: none;";
-      console.log(valueUserInput)
+      this.cliBlock = "display: flex;";
     }
   }
-
-
 }
 
