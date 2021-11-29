@@ -22,6 +22,7 @@ export class AppComponent {
     if(valueUserInput !== ""){
       this.inputEmptyHtml = "display: none;";
       console.log(valueUserInput)
+      console.log('spotdl '+ valueUserInput);
     }
   }
 
