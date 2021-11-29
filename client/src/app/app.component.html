@@ -1,0 +1,16 @@
+<div class="main-container-app">
+  <div class="first-container-app">
+    <div class="alert-inputs-empty" style="{{inputEmptyHtml}}">
+      <span> Alert : </span> Votre input est vide
+    </div>
+    <h1 class="main-title-app"> <span>Spotify</span> Downloader App </h1>
+    <input type="text" class="input-url-playlist" placeholder="Url de votre Musique/Playlist" #valueUserInput>
+    <button type="button" class="download-button" (click)="inputValue(valueUserInput.value)"> Télécharger </button>
+  </div>
+
+  <div class="second-container-app" style="{{cliBlock}}">
+    <div class="cli">
+      <p>cli container</p>
+    </div>
+  </div>
+</div>
