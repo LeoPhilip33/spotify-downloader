@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title:string = 'spotify-downloader';
-  inputEmptyHtml:string = "display: none;";
+  inputEmptyHtml:boolean = true;
+  cliBlock:string = 'style="display : none;"'
 
   inputEmpty(){
-    console.log("L'input est vide")
-    this.inputEmptyHtml = "";
+    this.inputEmptyHtml = false;
   }
 
   inputValue(valueUserInput:string){
@@ -20,12 +20,9 @@ export class AppComponent {
       this.inputEmpty();
     }
     if(valueUserInput !== ""){
-      this.inputEmptyHtml = "display: none;";
-      console.log(valueUserInput)
-      console.log('spotdl '+ valueUserInput);
+      this.inputEmptyHtml = true;
+      this.cliBlock = 'style="display: flex;"';
     }
   }
-
-
 }
 
